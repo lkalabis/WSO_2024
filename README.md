@@ -7,4 +7,3 @@ You can copy the examples and adjust them to your needs.
 Additionally, you can find the corresponding commands to retrieve the metadata using the Salesforce CLI.
 
 Feel free to clone this repository and/or contribute to it. If you have any questions, feel free to reach out to me.
-
