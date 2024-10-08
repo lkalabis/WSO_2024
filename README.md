@@ -260,7 +260,7 @@ sf project retrieve start -m "CustomTab:*" -m "Translations:de"
 
 ### Get all Translation languages 
 ```bash
-sf org list metadata --metadata-type Translations | jq -r '.[].fullName'
+sf org list metadata --json --metadata-type Translations | jq -r '.result[].fullName'
 ```
 
 ### Get all Metadata and retrieve the fullName
