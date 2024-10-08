@@ -266,14 +266,14 @@ sf org list metadata --json --metadata-type Translations | jq -r '.result[].full
 ### Get all Metadata and retrieve the fullName
 
 ```bash
-sf org list metadata --metadata-type CustomObjectTranslation | jq -r '.[].fullName' | sort
+sf org list metadata --json --metadata-type CustomObjectTranslation | jq -r '.result[].fullName' | sort
 ```
 
 ```bash
 #!/bin/bash
 
 # Extract fullName attributes from JSON output
-fullNames=$(sf org list metadata --metadata-type CustomObjectTranslation | jq -r '.[].fullName' | sort)
+fullNames=$(sf org list metadata --json --metadata-type CustomObjectTranslation | jq -r '.result[].fullName' | sort)
 
 
 # Create or overwrite package.xml
